@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000; /* Black background */
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-Area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px #242222;
+}
+
+.logo {
+  font-family: 'Billabong', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+
+input[type="password"] {
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 7px;
+  padding: 12px;
+  color: #fff;
+  font-size: 14px;
+
+}
+
+
+
+input::placeholder {
+  color: #999;
+
+}
+
+
+
+button.login-btn {
+  background-color: #103ccc; /* Instagram Blue */
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #999;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #333;
+  margin: 0 10px;
+}
+
+
+
+.facebook-login-btn {
+  background-color: #000;
+  color: #405de6;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border: none;
+}
+
+
+
+button i{
+  margin-right: 8px;
+  font-size: 20px;
+  color: #103ccc;
+}
+
+
+
+.forgot-password-link {
+  color: #999;
+  font-size: 14px;
+  margin: 15px 0;
+  margin-bottom: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 14px;
+  color: #999;
+}
+
+
+
+.sign-up a {
+  color: #103ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+
+}
+
+@media(max-width: 450px){
+  body{
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
